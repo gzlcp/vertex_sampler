@@ -14,18 +14,6 @@ repos:
   - id: check-added-large-files
 - repo: local
   hooks:
-    - id: isort
-      name: isort
-      entry: poetry run isort ./
-      language: system
-      pass_filenames: false
-
-    - id: black
-      name: black
-      entry: poetry run black ./
-      language: system
-      pass_filenames: false
-
     - id: mypy
       name: mypy
       entry: poetry run mypy --strict ./
